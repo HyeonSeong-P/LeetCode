@@ -17,7 +17,6 @@ class Solution {
             val curr = queue.poll()
             val currNode = curr.first ?: continue
             val currHeight = curr.second 
-            println(currNode.`val`)
             when {
                 currNode.left != null && currNode.right != null -> {
                     if(shouldLeafNode) return false
