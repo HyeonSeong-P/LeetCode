@@ -12,7 +12,6 @@ class Solution {
             }
         }
         if(nums.last() == 0) zeroSequenceList.add(zeroSequence)
-        print(zeroSequenceList)
         return zeroSequenceList.map { getSubArrayNum(it.toLong()) }.sum()
     }
 }
